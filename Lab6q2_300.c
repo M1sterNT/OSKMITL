@@ -17,7 +17,7 @@ int main(int argc,char *argv[]){
 	pthread_join(tid,NULL);
 	int i ;
 	for(i = 1; i<=(2*n);i++) msum += i ; 
-	printf("my msum = %d\n",msum);
+	printf("My Parent Sum = %d\n",msum);
 	printf("sum = %d\n",msum - csum);
 
 }
@@ -25,7 +25,7 @@ void *runner(void *param){
 	int n = atoi(param);
 	int i ;
 	for(i = 1;i<=n;i++) csum += i;
-	printf("my csum = %d\n",csum);
+	printf("My Child Sum = %d\n",csum);
 	pthread_exit(0);
 
 }
