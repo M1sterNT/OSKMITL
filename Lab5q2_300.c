@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
+
+// สุดยอดดดดด
+
 int main (){
    pid_t cpid;
    char ans = 'z';
